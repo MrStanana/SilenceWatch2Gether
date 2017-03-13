@@ -1,0 +1,23 @@
+{
+"manifest_version": 2,
+    "name": "Silence Watch2Gether",
+    "description": "Remove the annoying bell sound from Watch2Gether.",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.watch2gether.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "icons":
+        {
+            "16": "icon16.png",
+            "48": "icon48.png",
+            "128": "icon128.png"
+        }
+}
